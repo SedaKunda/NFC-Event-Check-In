@@ -70,7 +70,7 @@ fun Navigation() {
     NavHost(navController = navController, startDestination = "login_screen") {
         composable("login_screen") { LoginScreen(navController) }
         composable("event_details_screen") { EventDetailsScreen(navController) }
-        composable("check_in_result_screen") { CheckInResultScreen() }
+        composable("check_in_result_screen") { CheckInResultScreen(navController) }
 //        composable("admin_screen") { AdminScreen(checkedInUsers) }
     }
 }
